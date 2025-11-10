@@ -77,6 +77,9 @@ public class HelloApplication extends Application {
 
 
         Button btncSair = new Button("Sair");
+        btncSair.setOnAction(e -> {
+           System.exit(0);
+        });
 
         // Adicionar os botões na boxBotões
         boxBotoes.getChildren().addAll(btnCalcular,  btncLimpar, btncSair);
